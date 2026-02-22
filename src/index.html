@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Validator</title>
+</head>
+
+<body>
+  <div class="validator-widget">
+    <ul class="cards-list">
+      <li><img src="./img/visa.png" class="card-logo visa" alt="Visa"></li>
+      <li><img src="./img/mastercard.png" class="card-logo mastercard" alt="Mastercard"></li>
+      <li><img src="./img/mir.png" class="card-logo mir" alt="Mir"></li>
+      <li><img src="./img/amex.png" class="card-logo amex" alt="Amex"></li>
+      <li><img src="./img/discover.png" class="card-logo discover" alt="Discover"></li>
+      <li><img src="./img/jcb.png" class="card-logo jcb" alt="JCB"></li>
+      <li><img src="./img/diners.png" class="card-logo diners" alt="Diners"></li>
+    </ul>
+
+    <form class="validator-form">
+      <input type="text" id="card-input" class="validator-input" placeholder="Credit card number" required>
+      <button type="submit" class="validator-btn">Click to Validate</button>
+    </form>
+
+    <div id="validator-message" class="validator-message"></div>
+  </div>
+</body>
+
+</html>
