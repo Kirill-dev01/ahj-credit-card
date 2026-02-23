@@ -12,6 +12,7 @@ describe('Credit Card Validator e2e', () => {
   beforeAll(async () => {
     browser = await puppeteer.launch({
       headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'], 
     });
     page = await browser.newPage();
   });
@@ -36,7 +37,7 @@ describe('Credit Card Validator e2e', () => {
     // Ждем появления зеленого сообщения об успехе
     await page.waitForSelector('.validator-message.valid');
     
-    // Делаем линтер счастливым
+    // Делаем линтер счастливым (чтобы не было ошибки "Test has no assertions")
     expect(true).toBe(true);
   });
 
